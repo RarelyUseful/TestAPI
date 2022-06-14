@@ -5,11 +5,11 @@ const bodyParser = require("body-parser");
 
 const app = express();
 const port = process.env.PORT || 3000;
-const router = express.Router();
+// const router = express.Router();
 
-router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express123" });
-});
+// router.get("/", function (req, res, next) {
+//   res.render("index", { title: "Express123" });
+// });
 cors = require("cors");
 
 app.use(cors());
@@ -32,4 +32,4 @@ app.use("/airports", airportsRoutes);
 app.use("/products", productsRoutes);
 
 app.listen(port);
-module.exports = router;
+// module.exports = router;

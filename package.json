@@ -1,8 +1,11 @@
 {
-  "name": "React-2021-2022",
+  "name": "RarelyUseful Test Api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.0.0"
+  },
   "scripts": {
     "devStart": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "cors": "^2.8.5",
     "ejs": "^3.1.7",
     "express": "^4.18.1"
