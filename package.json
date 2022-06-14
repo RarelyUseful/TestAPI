@@ -1,14 +1,14 @@
 {
   "name": "RarelyUseful Test Api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "simple api for my projecs",
+  "main": "server.js",
   "engines": {
     "node": "16.0.0"
   },
   "scripts": {
-    "devStart": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
