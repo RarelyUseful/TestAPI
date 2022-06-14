@@ -4,6 +4,7 @@ const res = require("express/lib/response");
 const bodyParser = require("body-parser");
 
 const app = express();
+const port = process.env.PORT || 3000;
 cors = require("cors");
 
 app.use(cors());
@@ -25,4 +26,4 @@ const productsRoutes = require("./routes/products");
 app.use("/airports", airportsRoutes);
 app.use("/products", productsRoutes);
 
-//app.listen(9000);
+app.listen(port);
