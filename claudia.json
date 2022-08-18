@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "simple-api-executor",
+    "name": "simple-api",
+    "region": "eu-central-1"
+  },
+  "api": {
+    "id": "f90r7jsyq7"
+  }
+}
