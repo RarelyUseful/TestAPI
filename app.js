@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
+let cors = require("cors");
 
+app.use(cors());
 const airportsRoutes = require("./routes/airports");
 const productsRoutes = require("./routes/products");
 app.get("/heartbeat", (req, res, next) => {

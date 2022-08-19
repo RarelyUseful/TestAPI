@@ -5,7 +5,14 @@ const bodyParser = require("body-parser");
 
 var jsonParser = bodyParser.json();
 let productsList = require("../common/consts/products");
-let shopingList = [];
+let shopingList = [
+  {
+    id: "4",
+    name: "ser",
+    category: "nabiał",
+    isFood: true,
+  },
+];
 
 router.get("/heartbeat", (req, res, next) => {
   res.send(new Date());
@@ -22,21 +29,21 @@ router.get("/shopingList", (req, res) => {
   const plainList = shopingList.filter((value) => Object.keys(value).length !== 0);
   setTimeout(() => {
     res.status(200).json(plainList.map((product) => ({ id: product.id, name: product.name })));
-  }, 3000);
+  }, 2000);
 });
 
 router.post("/shopingList/new", jsonParser, (req, res) => {
   shopingList.push(req.body);
   setTimeout(() => {
     res.status(200).json(req.body);
-  }, 3000);
+  }, 2000);
 });
 
 router.delete("/shopingList/:shopingListId", jsonParser, (req, res) => {
   shopingList.push(req.body);
   setTimeout(() => {
     res.status(200).json(req.body);
-  }, 3000);
+  }, 2000);
 });
 
 router.post("/new", jsonParser, (req, res) => {
